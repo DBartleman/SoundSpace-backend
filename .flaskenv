@@ -1,0 +1,2 @@
+FLASK_APP=soundspace_app.py
+FLASK_ENV=development
