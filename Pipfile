@@ -9,6 +9,8 @@ verify_ssl = true
 flask = "~=1.1"
 python-dotenv = "~=0.13"
 jwt = "*"
+flask-migrate = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.8"
