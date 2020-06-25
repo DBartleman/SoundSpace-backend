@@ -11,6 +11,9 @@ python-dotenv = "~=0.13"
 jwt = "*"
 flask-migrate = "*"
 flask-cors = "*"
+flask-sqlalchemy = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.8"

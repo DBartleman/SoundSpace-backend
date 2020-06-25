@@ -20,7 +20,7 @@ def register_user():
     db.session.add(new_user)
     db.session.commit()
     token = jwt.encode(
-        {"id": new_user.id, "username": new_user.username, "favoriteAlbums": [], app.config['SECRET_KEY'])
+        {"id": new_user.id, "username": new_user.username, "favoriteAlbums": [], "albums":{}}, app.config['SECRET_KEY'])
     return {'token': token.decode('UTF-8'), "id": new_user.id, "username": new_user.username}
 
 
