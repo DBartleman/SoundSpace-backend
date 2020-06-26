@@ -1,0 +1,22 @@
+user:
+    id: user.id
+    token: token
+    username: user.username
+    favalbum: [
+        album.id,
+        album.title,
+        album.description
+    ]
+
+albums:
+{id: 
+    {albumobj}
+}
+
+
+songs:
+[
+       { id: song.id
+        title: song.title
+        url: song.url}
+    ]
