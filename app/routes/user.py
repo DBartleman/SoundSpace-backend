@@ -27,9 +27,11 @@ def register_user():
 @bp.route('/login', methods=['POST'])
 def login_user():
     data = request.json
-    print(data["username"])
+    print("HUGE COMMENT SO WE CAN FIND THIS \n\n\n" + data["email"])
     user = User.query.options(db.joinedload("favoriteAlbums")).filter_by(
-        username=data['username']).first()
+        email=data['email']).first()
+    print(user)
+    print(user.check_password(data['password']))
     if user.check_password(data['password']):
         fav_album_ids = []
         albums = {}
