@@ -13,8 +13,12 @@ albums:
     {albumobj}
 }
 
+currentSong:
+{
+    url: null
+}
 
-songs:
+tracklist:
 [
        { id: song.id
         title: song.title
