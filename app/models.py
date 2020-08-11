@@ -31,6 +31,7 @@ class Artist(db.Model):
     __tablename__ = "artists"
 
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False, unique=False)
     description = db.Column(db.String(500), nullable=True, unique=False)
 
     albums = db.relationship("Album", back_populates="artist")
@@ -52,8 +53,10 @@ class Album(db.Model):
 class Song(db.Model):
     __tablename__ = "songs"
     id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
     album_id = db.Column(db.Integer, db.ForeignKey("albums.id"), nullable=False)
     url = db.Column(db.String(200), nullable=False)
+    cover = db.Column(db.String(200), nullable=False)
     
     album = db.relationship("Album", back_populates="songs")
 
