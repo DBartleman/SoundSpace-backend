@@ -23,7 +23,7 @@ with app.app_context():
         name="Fred Hersch", 
         description="Fred Hersch is an American jazz pianist and educator. He has performed solo and led his own groups, including the Pocket Orchestra consisting of piano, trumpet, voice, and percussion. He was the first person to play weeklong engagements as a solo pianist at the Village Vanguard in New York City.")
     artist4 = Artist(
-        name="Gregory Privat",
+        name="Grégory Privat",
         description="Grégory Privat is a French piano player born in Martinique. After ten years of classical piano training, Privat started composing and improvising.")
     artist5 = Artist(
         name="Jim Lang", 
@@ -47,65 +47,65 @@ with app.app_context():
     # albums
     moonSafari = Album(artist_id=1, title="Moon Safari", description="Air's 1998 debut album Moon Safari is an influential masterpiece that not only started the international career of Jean-Benoît Dunckel and Nicolas Godin, but also found a loyal fanbase all over the world.")
     cowboyBebop = Album(artist_id=2, title="Cowboy Bebop", description="Cowboy Bebop is the first album created for the series, and the most easily categorized in terms of genre, as an outlet for many of the trademark bebop tracks. It begins with the show's theme song, \"Tank!\". The track \"Bad Dog No Biscuits\" opens with a cover of the Tom Waits composition \"Midtown\" before diverting in its interpretation.")
-    aloneVanguard = Album(artist_id=3, title="", description="")
-    kiKote = Album(artist_id=4, title="", description="")
-    heyArnold = Album(artist_id=5, title="", description="")
-    stellarWanderer = Album(artist_id=6, title="", description="")
-    theSims = Album(artist_id=7, title="", description="")
-    call = Album(artist_id=8, title="", description="")
-    django = Album(artist_id=9, title="", description="")
-    scenery = Album(artist_id=10, title="", description="")
+    aloneVanguard = Album(artist_id=3, title="Alone at the Vanguard", description="Alone at the Vanguard is one of the more private conversations a listener could have with Hersch. There’s no accompaniment; it’s just him, live, playing a smattering of classics and original compositions.")
+    kiKote = Album(artist_id=4, title="Ki Kote", description="Grégory Privat's premiere album, he invites you into his world of jazz for the first time.")
+    heyArnold = Album(artist_id=5, title="Hey Arnold!", description="Hey Arnold! is an American animated children's television series created by Craig Bartlett that aired on Nickelodeon from October 7, 1996, to June 8, 2004. The show centers on a fourth grader named Arnold. Episodes center on his experiences navigating urban life and helping fellow classmates and townsfolk.")
+    sanctusSpiritus = Album(artist_id=6, title="Sanctus Spiritus", description="As a duo, Epple and Stohl created a rich and vivid parallel dimension of new age music borne from the ‘70s prog scene and probably best referred to as “Space Music”. Throughout their career the couple earned a noble crust creating music and mood-pieces for planetariums and nature programmes.")
+    theSims = Album(artist_id=7, title="The Sims", description="Most of the music for The Sims and expansions was not produced by \"notable\" musicians, as opposed to much of the music in the sequels, especially Live mode music, which is often Simlish-converted versions of real-life established hits. Instead, the original Sims soundtrack was produced by various solo musicians and composers.")
+    call = Album(artist_id=8, title="Call", description="Perhaps Naura’s finest album, Call was the German pianist’s first recording in eight years, following a lengthy period of recovery from polyserositis.")
+    django = Album(artist_id=9, title="Django", description="Django is classic jazz in construction and execution. The song \"Django\" (like the rest of the album) was composed by the group's pianist and musical director, John Lewis. It is one of his best-known compositions, written in memory of the Belgian gypsy guitarist Django Reinhardt.")
+    scenery = Album(artist_id=10, title="Scenery", description="Scenery was virtually ignored in the US, as it came out at a time of America's reduced interest in jazz. However, it was well appreciated by Japanese fans and critics. In the decades since Scenery's release, the album has earned greater critical praise. Fukui's dexterity and self-taught style has earned him comparison to such piano greats as McCoy Tyner and Bill Evans.")
 
 
     #songs
     airSongs = [
         Song(
-            album_id=2,
+            album_id=1,
             title="La femme dargent",
             url="music/air/01_La_femme_dargent.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Sexy boy",
             url="music/air/02_Sexy_boy.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="All I need",
             url="music/air/03_All_I_need.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Kelly watch the stars",
             url="music/air/04_Kelly_watch_the_stars.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Talisman",
             url="music/air/05_Talisman.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Remember",
             url="music/air/06_Remember.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="You make it easy",
             url="music/air/07_You_make_it_easy.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Ce matin la",
             url="music/air/08_Ce_matin_la.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="New star in the sky",
             url="music/air/09_New_star_in_the_sky.mp3",
             cover="music/air/cover.jpeg"),
         Song(
-            album_id=2,
+            album_id=1,
             title="Le voyage de Penelope",
             url="music/air/10_Le_voyage_de_Penelope.mp3",
             cover="music/air/cover.jpeg"),
@@ -542,16 +542,149 @@ with app.app_context():
             title="Neighborhood 3",
             url="music/max/01_Neighborhood_3.mp3",
             cover="music/max/cover.jpeg"),
-        Song(
-            album_id=7,
-            title="",
-            url="",
-            cover="music/max/cover.jpeg"),
     ]
 
     micSongs = [
-        
+        Song(
+            album_id=8,
+            title="Soledad de Murcia",
+            url="music/mic/01_Soledad_de_Murcia.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="M.O.C.",
+            url="music/mic/02_M.O.C..mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Forgotten Garden",
+            url="music/mic/03_Forgotten_Garden.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Take Us Down to the River",
+            url="music/mic/04_Take_Us_Down_to_the_River.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Why Is Mary So Nervous?",
+            url="music/mic/05_Why_Is_Mary_So_Nervous_.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Don't Stop",
+            url="music/mic/06_Don't_Stop.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Miriam",
+            url="music/mic/07_Miriam.mp3",
+            cover="music/mic/cover.jpeg"),
+        Song(
+            album_id=8,
+            title="Call",
+            url="music/mic/08_Call.mp3",
+            cover="music/mic/cover.jpeg"),
     ]
+
+    modSongs = [
+        Song(
+            album_id=9,
+            title="Django",
+            url="music/mod/01_Django.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="One Bass Hit",
+            url="music/mod/02_One_Bass_Hit.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="La Ronde Suite",
+            url="music/mod/03_La_Ronde_Suite.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="The Queen's Fancy",
+            url="music/mod/04_The_Queen's_Fancy.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="Delaunay's Dilemma",
+            url="music/mod/05_Delaunay's_Dilemma.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="Autumn in New York",
+            url="music/mod/06_Autumn_in_New_York.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="But Not For Me",
+            url="music/mod/07_But_Not_For_Me.mp3",
+            cover="music/mod/cover.jpeg"),
+        Song(
+            album_id=9,
+            title="Milano",
+            url="music/mod/08_Milano.mp3",
+            cover="music/mod/cover.jpeg"),
+    ]
+
+    ryoSongs = [
+        Song(
+            album_id=10,
+            title="It Could Happen To You",
+            url="music/ryo/01_It_Could_Happen_To_You.mp3",
+            cover="music/ryo/cover.jpeg"),
+        Song(
+            album_id=10,
+            title="I Want To Talk About You",
+            url="music/ryo/02_I_Want_To_Talk_About_You.mp3",
+            cover="music/ryo/cover.jpeg"),
+        Song(
+            album_id=10,
+            title="Early Summer",
+            url="music/ryo/03_Early_Summer.mp3",
+            cover="music/ryo/cover.jpeg"),
+        Song(
+            album_id=10,
+            title="Willow Weep For Me",
+            url="music/ryo/04_Willow_Weep_For_Me.mp3",
+            cover="music/ryo/cover.jpeg"),
+        Song(
+            album_id=10,
+            title="Autumn Leaves",
+            url="music/ryo/05_Autumn_Leaves.mp3",
+            cover="music/ryo/cover.jpeg"),
+        Song(
+            album_id=10,
+            title="Scenery",
+            url="music/ryo/06_Scenery.mp3",
+            cover="music/ryo/cover.jpeg"),
+    ]
+
+    # Comitting
+    db.session.add(artist1)
+    db.session.add(artist2)
+    db.session.add(artist3)
+    db.session.add(artist4)
+    db.session.add(artist5)
+    db.session.add(artist6)
+    db.session.add(artist7)
+    db.session.add(artist8)
+    db.session.add(artist9)
+    db.session.add(artist10)
+
+    db.session.add(moonSafari)
+    db.session.add(cowboyBebop)
+    db.session.add(aloneVanguard)
+    db.session.add(kiKote)
+    db.session.add(heyArnold)
+    db.session.add(sanctusSpiritus)
+    db.session.add(theSims)
+    db.session.add(call)
+    db.session.add(django)
+    db.session.add(scenery)
 
     for song in airSongs:
         db.session.add(song)
@@ -567,25 +700,15 @@ with app.app_context():
         db.session.add(song)
     for song in maxSongs:
         db.session.add(song)
-    for song in :
+    for song in micSongs:
         db.session.add(song)
-    for song in :
+    for song in modSongs:
         db.session.add(song)
-    for song in :
+    for song in ryoSongs:
         db.session.add(song)
 
     
 
-    # Comitting
-    db.session.add(artist1)
-    db.session.add(artist2)
-    db.session.add(artist3)
-    db.session.add(artist4)
-    db.session.add(artist5)
-    db.session.add(artist6)
-    db.session.add(artist7)
-    db.session.add(artist8)
-    db.session.add(artist9)
-    db.session.add(artist10)
+    
 
     db.session.commit()
