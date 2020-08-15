@@ -9,7 +9,7 @@ class Favorite(db.Model):
     __tablename__ = "favorite"
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
-    song_id = db.Column(db.Integer, db.ForeignKey("albums.id"), nullable=False)
+    album_id = db.Column(db.Integer, db.ForeignKey("albums.id"), nullable=False)
 
 
 class User(db.Model):

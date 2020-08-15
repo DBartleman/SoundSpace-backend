@@ -11,7 +11,8 @@ def get_songs():
     data = [{
         "id": song.id,
         "album_id": song.album_id,
-        "url": song.url
+        "url": song.url,
+        "cover": song.cover
     } for song in songs]
     return {"data": data}
 
