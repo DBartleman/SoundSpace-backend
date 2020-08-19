@@ -705,10 +705,6 @@ with app.app_context():
     for song in modSongs:
         db.session.add(song)
     for song in ryoSongs:
-        db.session.add(song)
-
-    
-
-    
+        db.session.add(song)    
 
     db.session.commit()
